@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect, type ChangeEvent } from 'react';
+﻿import { useRef, useState, useEffect, type ChangeEvent } from 'react';
 import './App.css';
 import Github from './Github';
 
@@ -182,7 +182,7 @@ function App() {
       <audio ref={audioRef} className='hidden' controls />
       <canvas ref={canvasRef} width={800} height={400} className={`${canvasBg} mt-4 rounded-lg shadow-xl`} />
       <div className='mt-auto w-full'>
-        <Github profileURL='https://github.com/bruzz-bruzz' repoURL='https://github.com/bruzz-bruzz/audioVisualizer' />
+        <Github profileURL='https://github.com/bruzz-bruzz' repoURL='https://github.com/bruzz-bruzz/esp32-c3-audio-visualizer' />
       </div>
     </div>
   );
