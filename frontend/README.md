@@ -1,32 +1,44 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite Audio Visualizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+![React](https://img.shields.io/badge/React-19.3-61DAFB?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-7.0-3178C6?logo=typescript)
+![Vite](https://img.shields.io/badge/Vite-8.3-646CFF?logo=vite)
+![TailwindCSS](https://img.shields.io/badge/Tailwind-4.3-38B2AC?logo=tailwindcss)
 
-Currently, two official plugins are available:
+This is the frontend portion of the Audio Visualizer project, a web-based interface for processing and visualizing audio streams using the Web Audio API and HTML5 Canvas.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- **Microphone Input**: Real-time visualization from your microphone.
+- **File Upload**: Support for audio and video files.
+- **Interactive Controls**: Play, pause, and seek functionality.
+- **Theme Support**: Integrated Light/Dark mode.
+- **Performance**: High-performance rendering via `requestAnimationFrame` and `AnalyserNode`.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Getting Started
 
-## Expanding the Oxlint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+- Node.js (v18+)
+- npm or yarn
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+### Installation
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+2. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+3. Build for production:
+   ```bash
+   npm run build
+   ```
+
+## Configuration
+
+This project is configured with Vite, React 19, and Tailwind CSS. Type checking is enforced via TypeScript.

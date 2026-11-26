@@ -1,6 +1,12 @@
 # FFT Audio Visualizer
 
-[Link](https://esp32-c3-audio-visualizer.vercel.app/)
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![React](https://img.shields.io/badge/React-19.3-61DAFB?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-7.0-3178C6?logo=typescript)
+![Vite](https://img.shields.io/badge/Vite-8.3-646CFF?logo=vite)
+![TailwindCSS](https://img.shields.io/badge/Tailwind-4.3-38B2AC?logo=tailwindcss)
+
+[Live Demo](https://esp32-c3-audio-visualizer.vercel.app/)
 
 A web-based audio and video visualizer that processes input in real-time using the Web Audio API and HTML5 Canvas.
 
@@ -15,6 +21,11 @@ A web-based audio and video visualizer that processes input in real-time using t
     - Responsive "Main Menu" navigation to switch between input modes.
 - **Theme Support**: Easily toggle between Light and Dark modes.
 - **Performance**: Real-time FFT (Fast Fourier Transform) visualization using the browser's native `AnalyserNode`.
+
+## Project Structure
+
+- `frontend/`: React application using Vite and Tailwind CSS.
+- `esp32/`: Firmware/code for ESP32 hardware integration.
 
 ## Technologies Used
 
@@ -49,5 +60,9 @@ A web-based audio and video visualizer that processes input in real-time using t
 
 ## How it works
 
-The application creates an `AudioContext` and an `AnalyserNode`. When a microphone or file input is provided, it connects the stream or media element as a source to the analyser. The analyser provides real-time frequency data, which is then drawn onto an HTML5 `<canvas>` element using a requestAnimationFrame loop.
+The application creates an `AudioContext` and an `AnalyserNode`. When a microphone or file input is provided, it connects the stream or media element as a source to the analyser. The analyser provides real-time frequency data, which is then drawn onto an HTML5 `<canvas>` element using a `requestAnimationFrame` loop.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 

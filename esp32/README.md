@@ -1,4 +1,8 @@
-﻿# Audio Visualizer (ESP-32 Version)
+﻿# ESP32 Audio Visualizer
+
+![C++](https://img.shields.io/badge/Language-C++-00599C?logo=cplusplus)
+![ESP32](https://img.shields.io/badge/Platform-ESP32-E34F26?logo=espressif)
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
 An real-time audio visualizer project using an ESP32 microcontroller, an I2S microphone, and an SSD1306 OLED display. This project captures audio data, processes it using Fast Fourier Transform (FFT), and displays the frequency spectrum as a bar graph on the OLED display.
 
